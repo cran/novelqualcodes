@@ -1,4 +1,4 @@
-0d35acb0b4790433207f0a3b8ccdfeab *DESCRIPTION
+a89bfc43cdb494f71152f5626965ce9f *DESCRIPTION
 52155c925f19bc34fdfc3575cdbd0ca5 *LICENSE
 d799527a6baa5bd5e9b0dedbcc4ce80f *NAMESPACE
 ee8a9eaa282f546118101354569abab8 *R/exp_create_field_notes_template.R
@@ -10,11 +10,11 @@ de25549632987bb3b0dfcda11844d912 *R/exp_save_last_plot.R
 a82a94947f6000f0743efe83528527d4 *R/exp_score_codes.R
 1b54137d4ae82b40a266122de6d1201b *R/novelqualcodes-package.R
 79d61e4be693db5dc660a6303a3c89d3 *R/prv_reshape_for_plots.R
-4822ded7a8bf36e5e08f67e5a1c7dd70 *README.md
-e41f655285b738d90a6c221090d6310a *build/vignette.rds
-1c1859dde7e3be0b848881d3533baf97 *inst/doc/guided-tour.R
-eca3c5dcb79a48dd07349969fb8c537a *inst/doc/guided-tour.Rmd
-ef237c8ffb9b2d67be7c70b943c3f199 *inst/doc/guided-tour.html
+fd0a16c254ca2b644d9666c34a7570ab *README.md
+5778e71eb95d682867a8abf869796d48 *build/vignette.rds
+fcef82c413a4d89dbf07954fc7eb4564 *inst/doc/guided-tour.R
+056443db75ed3b83233da52748e32ec4 *inst/doc/guided-tour.Rmd
+ea0c1e7df6665662e73626b8ab32a823 *inst/doc/guided-tour.html
 3ca59b86e3612b00c5b1a24e33daa304 *inst/insect_study/matrices/Int01_ID731.xlsx
 18639d02ea19aaf5e0717b38da495872 *inst/insect_study/matrices/Int02_ID121.xlsx
 a82f9fcbaae7003ae57d7557d1c7a599 *inst/insect_study/matrices/Int03_ID54.xlsx
@@ -41,7 +41,7 @@ a4b9cc69c9ed04a10fe19012784c6e20 *man/plot_novelty.Rd
 dffc71e8915e2d002a7d21c19aa55e67 *man/reshape_for_plots.Rd
 1566e689ac579c6b9eb74d2a81df22f7 *man/save_last_plot.Rd
 5c64aae671350b68319fd4d3a85b4a54 *man/score_codes.Rd
-eca3c5dcb79a48dd07349969fb8c537a *vignettes/guided-tour.Rmd
+056443db75ed3b83233da52748e32ec4 *vignettes/guided-tour.Rmd
 0a6d20b82a926bb1e18d5cd1c573cedd *vignettes/nvivo01.jpg
 11d29883954e48f38ac44c317a245c95 *vignettes/nvivo02.jpg
 30f87a4c4fc292e4b04181631d7bf839 *vignettes/nvivo03.jpg
