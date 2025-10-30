@@ -1,6 +1,7 @@
 
 #' Plot richness of interview codes over time
 #'
+#' @description
 #' The full definition of novel and duplicate codes is in [score_codes()].
 #' Briefly, 'novel' codes are topics/ideas/concepts that were not mentioned in
 #' previous interviews, whereas 'duplicate' codes are topics that other
@@ -51,6 +52,16 @@
 #' # Generate a plot using scored codes and a vector of refinement times
 #' plot_richness(score_df = my_scores, refinements = c(4, 8, 10))
 #'
+#' # Add colours!
+#' plot_richness(
+#'     score_df = my_scores,
+#'     refinements = c(4, 8, 10),
+#'     col = list(stroke_novel     = "lightblue",
+#'                stroke_duplicate = "green",
+#'                fill_novel       = "blue",
+#'                fill_duplicate   = "orange")
+#' )
+#'
 #' @md
 #' @importFrom ggplot2 .data
 plot_richness <- function(score_df, refinements = integer(0),
@@ -96,6 +107,8 @@ plot_richness <- function(score_df, refinements = integer(0),
         ggpattern::scale_pattern_fill_manual(values = c(Duplicate = col$stroke_duplicate, Novel = col$stroke_novel)) +
         ggplot2::scale_fill_manual(values = c(Duplicate = col$fill_duplicate,   Novel = col$fill_novel)) +
         ggplot2::scale_colour_manual(values = c(Duplicate = col$stroke_duplicate, Novel = col$stroke_novel)) +
+        ggplot2::scale_x_continuous(breaks = function(x) round(unique(pretty(x)))) +
+        ggplot2::scale_y_continuous(breaks = function(x) round(unique(pretty(x)))) +
         ggplot2::theme(legend.position = "top") +
         ggplot2::ylab(y_label) +
         ggplot2::xlab("Interview order\n(Refinements indicated by \u2605)") +

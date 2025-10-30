@@ -34,8 +34,7 @@ The full definition of novel and duplicate codes is in \code{\link[=score_codes]
 Briefly, 'novel' codes are topics/ideas/concepts that were not mentioned in
 previous interviews, whereas 'duplicate' codes are topics that other
 interviews have discussed previously.
-}
-\details{
+
 Some interviews will touch on many different topics and generate many different
 codes, whereas other interviews will be brief or limited. We call this 'richness'.
 This plot complements \code{\link[=plot_novelty]{plot_novelty()}} by visualising the richness of each
@@ -65,6 +64,16 @@ plot_richness(score_df = my_scores, refinements = my_refinements)
 
 # Generate a plot using scored codes and a vector of refinement times
 plot_richness(score_df = my_scores, refinements = c(4, 8, 10))
+
+# Add colours!
+plot_richness(
+    score_df = my_scores,
+    refinements = c(4, 8, 10),
+    col = list(stroke_novel     = "lightblue",
+               stroke_duplicate = "green",
+               fill_novel       = "blue",
+               fill_duplicate   = "orange")
+)
 
 }
 \seealso{

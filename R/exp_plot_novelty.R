@@ -54,6 +54,16 @@
 #' # Generate a plot using scored codes and a vector of refinement times
 #' plot_novelty(score_df = my_scores, refinements = c(4, 8, 10))
 #'
+#' # Add colours!
+#'
+#' plot_novelty(
+#'   score_df = my_scores,
+#'   refinements = c(4, 8, 10),
+#'   col = list(stroke    = "lightgreen",
+#'              fill_ref  = "red",
+#'              fill      = "blue")
+#' )
+#'
 #' @seealso [score_codes()], [import_field_notes()], [plot_richness()], [save_last_plot()]
 #'
 #' @importFrom ggplot2 .data
@@ -83,6 +93,7 @@ plot_novelty <- function(score_df, refinements = integer(0), col = list(stroke =
                             size = 2, shape = 21, colour = col$stroke) +
         ggplot2::scale_fill_manual(values = c(`TRUE`  = col$fill_ref,
                                               `FALSE` = col$fill)) +
+        ggplot2::scale_x_continuous(breaks = function(x) round(unique(pretty(x)))) +
         ggplot2::scale_y_continuous(breaks = function(x) round(unique(pretty(x)))) +
         ggplot2::theme(legend.position = "none") +
         ggplot2::ylab("Cumulative sum of novel interview codes") +
